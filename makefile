@@ -2,6 +2,7 @@ buildFolder := build
 e0Name := e0.out
 e1Name := e1.out
 e2Name := e2.out
+e5Name := e5.out
 
 
 clean:
@@ -18,3 +19,7 @@ e1:
 e2:
 	g++ -std=c++11 -Wall -pthread Exercise_2/shared-variable.cpp -o ${buildFolder}/${e2Name}
 	./${buildFolder}/${e2Name}
+
+e5:
+	g++ -std=c++11 -Wall -pthread Exercise_5/performance.cpp -o ${buildFolder/${e5Name}}
+	./${buildFolder}/${e5Name}
