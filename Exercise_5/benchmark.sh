@@ -5,7 +5,7 @@ T_VALUES=(1 2 4 8 16 32)
 N_VALUES=(1 2 4 8 16 32)
 
 # Executable name and output log
-PROGRAM="./e5.out" # Replace with your compiled executable
+PROGRAM="./Exersize_5/e5.out" # Replace with your compiled executable
 OUTPUT_LOG="results.txt"
 
 # Clear or initialize the results file
