@@ -9,7 +9,7 @@ PROGRAM="./build/e5.out" # Replace with your compiled executable
 OUTPUT_LOG="Exercise_5/results.txt"
 
 # Clear or initialize the results file
-echo "T,N,Real_Time_Sec" > "$OUTPUT_LOG"
+echo "T | N | Real_Time_Sec" > "$OUTPUT_LOG"
 
 for T in "${T_VALUES[@]}"; do
     for N in "${N_VALUES[@]}"; do
@@ -20,7 +20,7 @@ for T in "${T_VALUES[@]}"; do
         ELAPSED=$( { TIMEFORMAT='%R'; time "$PROGRAM" "$T" "$N" > /dev/null; } 2>&1 )
         
         # Save combination and runtime to CSV log
-        echo "$T,$N,$ELAPSED" >> "$OUTPUT_LOG"
+        echo "$T | $N | $ELAPSED" >> "$OUTPUT_LOG"
     done
 done
 
