@@ -29,4 +29,4 @@ e5a:
 
 e6:
 	g++ -std=c++11 -Wall -pthread Exercise_6/dining.cpp -o ${buildFolder}/${e6Name}
-	./Exercise_6/${e6Name}
+	./${buildFolder}/${e6Name} 10
