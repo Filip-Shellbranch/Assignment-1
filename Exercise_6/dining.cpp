@@ -78,6 +78,15 @@ int main(int argc, char *argv[])
     {
       int left = i;
       int right = (i == 0 ? philosophers : i) - 1;
+      // === OUR CODE :) ===
+      if (i == philosophers - 1) {
+        // Philosopher should all start grabbing the left fork, except the last philosopher which starts with right.
+        // Guarantees the first philosopher will always be able to grab left and right.
+        int temp = left;
+        left = right;
+        right = temp;
+      }
+      // === END OUR CODE :( === 
       ph[i] = std::thread(philosopher, i, &forks[left], &forks[right]);
     }
 
