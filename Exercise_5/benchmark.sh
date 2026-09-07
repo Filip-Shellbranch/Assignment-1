@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Define parameter ranges
 T_VALUES=(1 2 4 8 16 32)
 N_VALUES=(1 2 4 8 16 32)
