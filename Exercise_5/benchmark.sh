@@ -5,8 +5,8 @@ T_VALUES=(1 2 4 8 16 32)
 N_VALUES=(1 2 4 8 16 32)
 
 # Executable name and output log
-PROGRAM="./Exersize_5/e5.out" # Replace with your compiled executable
-OUTPUT_LOG="results.txt"
+PROGRAM="./build/e5.out" # Replace with your compiled executable
+OUTPUT_LOG="Exersize_5/results.txt"
 
 # Clear or initialize the results file
 echo "T,N,Real_Time_Sec" > "$OUTPUT_LOG"

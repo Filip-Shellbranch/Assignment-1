@@ -22,4 +22,5 @@ e2:
 
 e5:
 	g++ -std=c++11 -Wall -pthread Exercise_5/performance.cpp -o ${buildFolder}/${e5Name}
-	./${buildFolder}/${e5Name}
+	chmod x+ Exercise_5/benchmark.sh
+	./Exercise_5/benchmark.sh
